@@ -4,7 +4,7 @@ function Count() {
     let[count,setCount] = useState(0);
   return (
     <div>
-        <button onClick={()=>setCount(count+1)}>count {count}</button>
+        <button onClick={()=>setCount(count+1)}>counnnnnt {count}</button>
     </div>
   )
 }
