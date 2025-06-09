@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  add: <input type="text" id="i">
+  <h1 id="p"></h1>
+  <br/>
+   add: <input type="text" id="i2">
+  <h1 id="p2"></h1>
+
+  <script>
+    // Use "change" instead of "onchange"
+    document.getElementById("i").addEventListener("input", (e) => {
+
+        let d =  document.getElementById("p").value;
+
+      if(d > 5){
+        d = e.target.value
+      }
+    });
+      document.getElementById("i2").addEventListener("change", function(e) {
+               document.getElementById("p2").innerText =  e.target.value; // Fires only when you click away
+  });
+
+   
+  
+  </script>
+</body>
+</html>
